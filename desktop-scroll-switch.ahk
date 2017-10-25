@@ -7,6 +7,7 @@ desktop_win_id := -1
   if (desktop_win_id == win_id) | ((desktop_win_id < 0) & (winname == "")) {
     Send "^#{Left}"
   }
+  sleep 200
 return
 
 ; "Forward" button
@@ -16,6 +17,7 @@ return
   if (desktop_win_id == win_id) | ((desktop_win_id < 0) & (winname == "")) {
     Send "^#{Right}"
   }
+  sleep 200
 return
 
 ~!^MButton::
