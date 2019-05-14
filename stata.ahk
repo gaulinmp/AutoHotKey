@@ -1,10 +1,11 @@
 SetTitleMatchMode 1
 active_id := WinGetID("A")
 
+Sleep 500
 WinActivate "Stata"
 WinWaitActive "Stata"
 Send "do `"" A_Args[1] "`"{enter}"
-Sleep 1000 
+Sleep 1000
 
 ;WinActivate "ahk_id " active_id
 
@@ -21,6 +22,6 @@ Exit
 ; "code-runner.showRunCommandInEditorContextMenu": true,
 ; "code-runner.cwd": "C:\\Temp\\",
 ;;
-;; Note: Stata needs newline before and after code. 
+;; Note: Stata needs newline before and after code.
 ;; So select end of line above, and beginning of line
 ;; below to run a selection.
