@@ -26,7 +26,7 @@ This uses [Code Runner](https://github.com/formulahendry/vscode-code-runner) ext
 
 ## Setup
 
-In your `settings.json` file, add the following (note the escaped quotes around the .ahk full-paths):
+In your [`settings.json`](https://code.visualstudio.com/docs/getstarted/settings) file, add the following (note the escaped quotes around the .ahk full-paths):
 
 ```json
 "code-runner.executorMapByFileExtension": {
