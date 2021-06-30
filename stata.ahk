@@ -2,8 +2,8 @@ SetTitleMatchMode 1
 active_id := WinGetID("A")
 
 Sleep 500
-WinActivate "Stata"
-WinWaitActive "Stata"
+WinActivate "Stata/"
+WinWaitActive "Stata/"
 Send "do `"" A_Args[1] "`"{enter}"
 Sleep 1000
 

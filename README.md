@@ -9,10 +9,12 @@ AHK Documentation: [https://lexikos.github.io/v2/docs/AutoHotkey.htm](https://le
 ## Install
 
 AHK Installation (get latest version): [https://www.autohotkey.com/download/2.0/](https://www.autohotkey.com/download/2.0/)
+The Version 2.0 was updated to use braces for functions and &var for references, so make sure your version of AHK 2.0 is up to date.
+**Also note**: The AHK 2.0 executable is no longer named `AutoHotkeyU64.exe`, it's now just `AutoHotkey64.exe`, so this update might break scripts.
 
-Clone repo to a semi-permenant location, and make sure AutoHotkey is in your path.
+Clone repo to a semi-permanent location, and make sure AutoHotkey is in your path.
 
-Run [open_startup_folder.bat](https://github.com/gaulinmp/AutoHotKey/blob/master/open_startup_folder.bat) 
+Run [open_startup_folder.bat](https://github.com/gaulinmp/AutoHotKey/blob/master/open_startup_folder.bat)
   and create a shortcut to [start.bat](https://github.com/gaulinmp/AutoHotKey/blob/master/start.bat)
   in this folder (right click drag into Startup folder).
 If you have other scripts you want to run, just add them to `start.bat`.
@@ -30,11 +32,13 @@ In your [`settings.json`](https://code.visualstudio.com/docs/getstarted/settings
 
 ```json
 "code-runner.executorMapByFileExtension": {
-        ".do": "AutoHotkeyU64.exe \"C:/[PATH TO THIS REPO]/stata.ahk\"",
-        ".ado": "AutoHotkeyU64.exe \"C:/[PATH TO THIS REPO]/stata.ahk\"",
-        ".sas": "AutoHotkeyU64.exe \"C:/[PATH TO THIS REPO]/sas.ahk\""
+        ".do": "AutoHotkey64.exe \"C:/[PATH TO THIS REPO]/stata.ahk\"",
+        ".ado": "AutoHotkey64.exe \"C:/[PATH TO THIS REPO]/stata.ahk\"",
+        ".sas": "AutoHotkey64.exe \"C:/[PATH TO THIS REPO]/sas.ahk\""
     }
 ```
+
+**Note**: The AHK 2.0 executable is no longer named `AutoHotkeyU64.exe`, it's now just `AutoHotkey64.exe`, so this update might break scripts.
 
 To get SAS working, you have one more step.
 Open SAS, and edit your Keys file (Tools --> Options --> Keys).
