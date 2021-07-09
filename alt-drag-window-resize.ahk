@@ -117,21 +117,8 @@ getWinStats() {
   ret.w_pct := win_w / ret.mon_width
   ret.h_pct := win_h / ret.mon_height
 
-
-  Switch WINROTATE
-  {
-  Case 1:
-      ret.pct_width := 1/3
-  Case 2:
-      ret.pct_width := 1/2
-  Case 3:
-      ret.pct_width := 2/3
-  Case 4:
-      ret.pct_width := 3/4
-  Default:
-      ret.pct_width := 1/4
-  }
-  WINROTATE := Mod(WINROTATE+1, 5)
+  ret.pct_width := (WINROTATE+3)/10
+  WINROTATE := Mod(WINROTATE + 1, 8)
 
   return ret
 }
